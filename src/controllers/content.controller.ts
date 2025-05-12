@@ -143,7 +143,7 @@ export class contentController {
   @ApiForbiddenResponse({ description: 'Forbidden.' })
   @ApiOperation({
     summary:
-      'Store the data into to the content table',
+      'Store the data into the content table',
   })
   @Post()
   async create(@Res() response: FastifyReply, @Body() content: any) {
@@ -988,7 +988,7 @@ export class contentController {
     },
   })
   @ApiOperation({
-    summary: 'Get Assessments data'
+    summary: 'Get assessment data'
   })
   @Post('/getAssessment')
   async getAssessment(@Res() response: FastifyReply, @Body() queryData: any) {

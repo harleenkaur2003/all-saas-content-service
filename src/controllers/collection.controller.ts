@@ -84,7 +84,7 @@ export class CollectionController {
   @ApiForbiddenResponse({ description: 'Forbidden.' })
   @ApiOperation({
     summary:
-      'Store collection data for adding the content with the reference of the colletion id',
+      'Store collection data for adding the content with the reference of the collection id',
   })
   @Post()
   async create(@Res() response: FastifyReply, @Body() collection: collection) {
@@ -207,7 +207,7 @@ export class CollectionController {
     },
   })
   @ApiOperation({
-    summary: 'Get all data from the collection with the specific language'
+    summary: 'Get all data from the collection by the specific language'
   })
   @Get('/bylanguage/:language')
   async fatchByLanguage(
@@ -340,7 +340,7 @@ export class CollectionController {
     },
   })
   @ApiOperation({
-    summary: 'update the collection data using collection id'
+    summary: 'Update the collection data using collection id'
   })
   @Put('/:id')
   async update(
@@ -397,7 +397,7 @@ export class CollectionController {
     },
   })
   @ApiOperation({
-    summary: 'delete the collection data using collection id'
+    summary: 'Delete the collection data using collection id'
   })
   @Delete('/:id')
   async delete(@Res() response: FastifyReply, @Param('id') id) {
